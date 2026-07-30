@@ -53,7 +53,35 @@ crazing, inclusion, patches, pitted_surface, rolled-in_scale, scratches. A total
 chongkong, hanfeng, yueyawan, shuiban, youban, siban, yiwu, yahen, zhehen, yaozhe. A total of 2070 images, VOC XML format.
 
 ---
+## Dataset Splitting
 
+使用 `scripts/` 目录下的脚本将原始数据集按 **8:1:1** 比例划分为训练集、验证集和测试集。
+
+### NEU-DET
+
+NEU-DET 原始目录结构需为 `IMAGES/`（图片）和 `ANNOTATIONS/`（VOC XML 标注）：
+
+```bash
+python scripts/split_neudet_dataset.py
+```
+
+- 输入：`./NEU-DET/`
+- 输出：`./NEU-DET-split/`，包含 `train/`、`val/`、`test/` 三个子目录，每个子目录下有 `images/` 和 `annotations/`
+
+### GC10-DET
+
+GC10-DET 原始目录结构为按缺陷类别分文件夹（`1/`...`10/`）存放图片，`lable/` 目录存放 VOC XML 标注：
+
+```bash
+python scripts/split_gc10det_dataset.py
+```
+
+- 输入：`./GC10-DET/`
+- 输出：`./GC10-DET-split/`，包含 `train/`、`val/`、`test/` 三个子目录，每个子目录下有 `images/` 和 `annotations/`
+
+两个脚本均使用固定随机种子（`seed=42`），确保划分结果可复现。
+
+---
 ## Innovations
 
 Steel surface defect detection is a critical component of industrial quality inspection, and its detection accuracy directly impacts steel product quality and production safety. To address issues in RT-DETR for steel surface defect detection, such as sparse defect target distribution, easy loss of fine-grained defect details, and insufficient positive sample supervision, this paper proposes an improved RT-DETR model for steel surface defect detection.
