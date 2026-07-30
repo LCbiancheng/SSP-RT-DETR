@@ -1,0 +1,16 @@
+__include__: [
+  '../../dataset/gc10det_detection.yml',
+  '../../runtime.yml',
+  '../include/baseline_dataloader.yml',
+  '../include/optimizer.yml',
+  '../include/baseline_rtdetr_r50vd.yml',
+]
+
+output_dir: ./output/GC10_B0_Base
+result_csv_name: GC10_B0_Base_results.csv
+epoches: 200
+
+lr_scheduler:
+  type: MultiStepLR
+  milestones: [150, 180]
+  gamma: 0.1

@@ -1,0 +1,33 @@
+__include__: [
+  './rtdetr_r50vd_6x_neudet.yml',
+]
+
+# E13: Adaptive Mosaic + S2 Cross-Attention Fusion
+BaselineRTDETR:
+  multi_scale:
+  - 512
+  - 544
+  - 576
+  - 608
+  - 640
+
+train_dataloader:
+  dataset:
+    use_adaptive_mosaic: true
+    adaptive_mosaic_prob: 0.5
+    adaptive_mosaic_same_image_threshold: 2
+    adaptive_mosaic_size: 640
+    adaptive_mosaic_close_last_epochs: 10
+
+PResNet:
+  return_idx:
+  - 0
+  - 1
+  - 2
+  - 3
+
+BaselineHybridEncoder:
+  use_s2_enhance: true
+  use_s2_attn_gated: false
+  use_s2_cross_attn: true
+  s2_in_channels: 64

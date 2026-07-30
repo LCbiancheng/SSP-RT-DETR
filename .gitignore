@@ -1,0 +1,22 @@
+# 系统文件
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+
+# IDE
+.idea/
+.vscode/
+
+# 缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# 训练运行时
+wandb/
+runs/
+*.log
+output/

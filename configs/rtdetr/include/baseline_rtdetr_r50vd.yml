@@ -1,0 +1,122 @@
+task: detection
+model: BaselineRTDETR
+criterion: BaselineSetCriterion
+postprocessor: BaselineRTDETRPostProcessor
+
+BaselineRTDETR:
+  backbone: PResNet
+  encoder: BaselineHybridEncoder
+  decoder: BaselineRTDETRTransformer
+  multi_scale:
+  - 384
+  - 416
+  - 448
+  - 480
+  - 640
+
+PResNet:
+  depth: 18
+  variant: d
+  freeze_at: 0
+  return_idx:
+  - 1
+  - 2
+  - 3
+  num_stages: 4
+  freeze_norm: true
+  pretrained: true
+
+BaselineHybridEncoder:
+  in_channels:
+  - 128
+  - 256
+  - 512
+  feat_strides:
+  - 8
+  - 16
+  - 32
+  hidden_dim: 256
+  use_s2_enhance: false
+  s2_in_channels: 64
+  use_s2_attn_gated: false
+  use_s2_cross_attn: false
+  use_encoder_idx:
+  - 2
+  num_encoder_layers: 1
+  nhead: 8
+  dim_feedforward: 1024
+  dropout: 0.0
+  enc_act: gelu
+  pe_temperature: 10000
+  expansion: 1.0
+  depth_mult: 1
+  act: silu
+  eval_spatial_size:
+  - 640
+  - 640
+
+BaselineRTDETRTransformer:
+  feat_channels:
+  - 256
+  - 256
+  - 256
+  feat_strides:
+  - 8
+  - 16
+  - 32
+  hidden_dim: 256
+  num_levels: 3
+  num_queries: 300
+  num_decoder_layers: 6
+  num_denoising: 100
+  use_pg_o2m: false
+  pg_o2m_num_groups: 3
+  pg_o2m_mask_ratio: 0.3
+  pg_o2m_noise_std: 0.03
+  pg_o2m_detach_aux_query: true
+  pg_o2m_center_jitter: 0.03
+  pg_o2m_scale_jitter: 0.05
+  eval_idx: -1
+  eval_spatial_size:
+  - 640
+  - 640
+
+use_focal_loss: True
+
+BaselineRTDETRPostProcessor:
+  num_top_queries: 300
+
+BaselineSetCriterion:
+  weight_dict:
+    loss_vfl: 1
+    loss_bbox: 5
+    loss_giou: 2
+  losses:
+  - vfl
+  - boxes
+  alpha: 0.75
+  gamma: 2.0
+  mal_gamma: 1.5
+  mal_eps: 0.000001
+  mal_defect_area_alpha: 0.5
+  mal_defect_area_tau: 0.02
+  mal_defect_shape_beta: 0.3
+  mal_defect_shape_r0: 3.0
+  mal_defect_weight_max: 2.0
+  use_pg_o2m: false
+  pg_o2m_loss_weight: 0.1
+  pg_o2m_lite_top_m: 2
+  pg_o2m_lite_iou_thr: 0.3
+  pg_o2m_lite_cls_only: true
+  pg_o2m_lite_exclude_hungarian: true
+  pg_o2m_lite_decay: true
+  pg_o2m_lite_decay_start_ratio: 0.5
+  pg_o2m_lite_decay_end_ratio: 1.0
+  matcher:
+    type: BaselineHungarianMatcher
+    weight_dict:
+      cost_class: 2
+      cost_bbox: 5
+      cost_giou: 2
+    alpha: 0.25
+    gamma: 2.0
