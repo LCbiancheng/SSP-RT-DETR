@@ -20,3 +20,6 @@ wandb/
 runs/
 *.log
 output/
+
+# 基础配置（本地引用，不上传）
+configs/rtdetr/other_experiments/
