@@ -72,9 +72,9 @@ SSP-RT-DETR/
 │   └── split_gc10det_dataset.py
 │
 └── figure_scripts/            # Visualization scripts
-    ├── neudet_comparison.py   # NEU-DET multi-model detection comparison figure
-    ├── model_heatmap.py       # Model heatmap comparison figure
-    └── draw_mosaic_neudet.py  # Mosaic vs. SA-Mosaic comparison figure
+    ├── fig2_draw_mosaic_neudet.py  # Mosaic vs. SA-Mosaic comparison figure
+    ├── fig6_model_heatmap.py       # Model heatmap comparison figure
+    └── fig7_neudet_comparison.py   # NEU-DET multi-model detection comparison figure
 ```
 
 ---
