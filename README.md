@@ -142,6 +142,17 @@ On NEU-DET, SSP-RT-DETR achieves 47.50% AP and 77.01% AP50, exceeding the RT-DET
 ## Citations
 
 ```bibtex
+@article{song2013neu,
+  author  = {Song, K. and Yan, Y.},
+  title   = {A Noise Robust Method Based on Completed Local Binary Patterns for Hot-Rolled Steel Strip Surface Defects},
+  journal = {Applied Surface Science},
+  volume  = {285},
+  pages   = {858--864},
+  year    = {2013},
+  doi     = {10.1016/j.apsusc.2013.09.002},
+  note    = {\doi{10.1016/j.apsusc.2013.09.002}}
+}
+
 @article{lv2020gc10,
   author  = {Lv, X. and Duan, F. and Jiang, J.-J. and Fu, X. and Gan, L.},
   title   = {Deep Metallic Surface Defect Detection: The New Benchmark and Detection Network},
@@ -154,16 +165,6 @@ On NEU-DET, SSP-RT-DETR achieves 47.50% AP and 77.01% AP50, exceeding the RT-DET
   note    = {\doi{10.3390/s20061562}}
 }
 
-@article{song2013neu,
-  author  = {Song, K. and Yan, Y.},
-  title   = {A Noise Robust Method Based on Completed Local Binary Patterns for Hot-Rolled Steel Strip Surface Defects},
-  journal = {Applied Surface Science},
-  volume  = {285},
-  pages   = {858--864},
-  year    = {2013},
-  doi     = {10.1016/j.apsusc.2013.09.002},
-  note    = {\doi{10.1016/j.apsusc.2013.09.002}}
-}
 ```
 
 ---
