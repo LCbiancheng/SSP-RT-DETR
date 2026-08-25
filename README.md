@@ -170,8 +170,6 @@ On NEU-DET, SSP-RT-DETR achieves 47.50% AP and 77.01% AP50, exceeding the RT-DET
 
 ## License & Contribution Guidelines
 
-**Author Contributions**
-
 - Baozhang Liu: Conceptualization, Data Curation, Methodology, Validation, Software, Formal analysis, Investigation, Writing-original draft, Visualization.
 - Wei Shi: Conceptualization, Methodology, Resources, Writing-review & editing, Project administration, Supervision.
 - Jingyang Wang: Conceptualization, Methodology, Resources, Writing-review & editing, Project administration, Supervision, Funding acquisition.
