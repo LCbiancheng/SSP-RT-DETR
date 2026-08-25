@@ -1,0 +1,447 @@
+{
+  "image": "scratches_132.jpg",
+  "class": "Inclusion",
+  "rows": {
+    "Ground Truth": [
+      {
+        "box": [
+          103.0,
+          1.0,
+          120.0,
+          96.0
+        ],
+        "color": "blue",
+        "color_rgb": [
+          45,
+          130,
+          230
+        ],
+        "type": "gt"
+      },
+      {
+        "box": [
+          2.0,
+          100.0,
+          196.0,
+          194.0
+        ],
+        "color": "blue",
+        "color_rgb": [
+          45,
+          130,
+          230
+        ],
+        "type": "gt"
+      },
+      {
+        "box": [
+          133.0,
+          1.0,
+          199.0,
+          198.0
+        ],
+        "color": "blue",
+        "color_rgb": [
+          45,
+          130,
+          230
+        ],
+        "type": "gt"
+      }
+    ],
+    "YOLO26l": [
+      {
+        "box": [
+          101.7,
+          0.1,
+          119.1,
+          91.4
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.8253,
+        "label": "scratches"
+      },
+      {
+        "box": [
+          13.8,
+          85.7,
+          190.4,
+          189.4
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.66,
+        "label": "scratches"
+      },
+      {
+        "box": [
+          167.1,
+          0.0,
+          199.9,
+          95.7
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed_by_model_found_by_ssp",
+        "score": 0.2992,
+        "_commented": true
+      },
+      {
+        "box": [
+          133.0,
+          1.0,
+          199.0,
+          198.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed_by_model_found_by_ssp"
+      }
+    ],
+    "RT-DETR": [
+      {
+        "box": [
+          0.8,
+          92.3,
+          196.6,
+          199.7
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.3135,
+        "label": "pitted_surface"
+      },
+      {
+        "box": [
+          0.8,
+          92.3,
+          196.6,
+          199.7
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.2412,
+        "label": "patches"
+      },
+      {
+        "box": [
+          0.8,
+          92.3,
+          196.6,
+          199.7
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.1872,
+        "label": "rolled-in_scale"
+      },
+      {
+        "box": [
+          2.0,
+          100.0,
+          196.0,
+          194.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed_by_model_found_by_ssp",
+        "_commented": true
+      },
+      {
+        "box": [
+          133.0,
+          1.0,
+          199.0,
+          198.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed_by_model_found_by_ssp"
+      },
+      {
+        "box": [
+          104.7,
+          -2.9,
+          122.1,
+          88.4
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.8253,
+        "label": "scratches"
+      }
+    ],
+    "SSP-RT-DETR": [
+      {
+        "box": [
+          1.7,
+          137.6,
+          193.3,
+          199.6
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.0151,
+        "label": "scratches"
+      },
+      {
+        "box": [
+          124.9,
+          -0.1,
+          200.7,
+          199.6
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.0157,
+        "label": "inclusion"
+      },
+      {
+        "box": [
+          98.7,
+          5.1,
+          119.1,
+          93.4
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.8253,
+        "label": "scratches"
+      }
+    ],
+    "YOLO10n": [
+      {
+        "box": [
+          103.0,
+          1.0,
+          120.0,
+          96.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed",
+        "label": "inclusion",
+        "_commented": true
+      },
+      {
+        "box": [
+          2.0,
+          100.0,
+          196.0,
+          194.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed",
+        "label": "inclusion",
+        "_commented": true
+      },
+      {
+        "box": [
+          133.0,
+          1.0,
+          199.0,
+          198.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed",
+        "label": "inclusion"
+      },
+      {
+        "box": [
+          102.5194091796875,
+          0.0,
+          121.10671997070312,
+          90.77657318115234
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.855331301689148,
+        "label": "scratches"
+      },
+      {
+        "box": [
+          5.847358703613281,
+          101.37551879882812,
+          200.0,
+          172.0233917236328
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.3097286820411682,
+        "label": "scratches"
+      }
+    ],
+    "YOLO11n": [
+      {
+        "box": [
+          103.0,
+          1.0,
+          120.0,
+          96.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed",
+        "label": "inclusion",
+        "_commented": true
+      },
+      {
+        "box": [
+          2.0,
+          100.0,
+          196.0,
+          194.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed",
+        "label": "inclusion",
+        "_commented": true
+      },
+      {
+        "box": [
+          133.0,
+          1.0,
+          199.0,
+          198.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed",
+        "label": "inclusion"
+      },
+      {
+        "box": [
+          102.73670196533203,
+          0.07762908935546875,
+          120.53237915039062,
+          90.06824493408203
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.7405293583869934,
+        "label": "scratches"
+      },
+      {
+        "box": [
+          1.7742729187011719,
+          102.34432220458984,
+          191.8443603515625,
+          198.0348358154297
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.6284143924713135,
+        "label": "scratches"
+      }
+    ]
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "image": "patches_295.jpg",
+  "class": "Patches",
+  "rows": {
+    "Ground Truth": [
+      {
+        "box": [
+          6.0,
+          1.0,
+          85.0,
+          191.0
+        ],
+        "color": "blue",
+        "color_rgb": [
+          45,
+          130,
+          230
+        ],
+        "type": "gt"
+      },
+      {
+        "box": [
+          144.0,
+          1.0,
+          199.0,
+          124.0
+        ],
+        "color": "blue",
+        "color_rgb": [
+          45,
+          130,
+          230
+        ],
+        "type": "gt"
+      },
+      {
+        "box": [
+          143.0,
+          118.0,
+          183.0,
+          198.0
+        ],
+        "color": "blue",
+        "color_rgb": [
+          45,
+          130,
+          230
+        ],
+        "type": "gt"
+      }
+    ],
+    "YOLO26l": [
+      {
+        "box": [
+          7.9,
+          0.9,
+          84.6,
+          192.3
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.9539,
+        "label": "patches",
+        "text_offset": -10
+      },
+      {
+        "box": [
+          144.0,
+          0.7,
+          199.8,
+          118.3
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.905,
+        "label": "patches",
+        "text_offset": -10
+      },
+      {
+        "box": [
+          143.5,
+          116.7,
+          180.9,
+          199.9
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.9035,
+        "label": "patches",
+        "text_offset": -10
+      },
+      {
+        "box": [
+          185.6,
+          84.9,
+          200.0,
+          118.8
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.3767,
+        "label": "inclusion",
+        "text_offset": -10
+      }
+    ],
+    "RT-DETR": [
+      {
+        "box": [
+          1.5,
+          21.3,
+          73.6,
+          201.0
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.0993,
+        "label": "patches"
+      },
+      {
+        "box": [
+          81.6,
+          1.5,
+          196.5,
+          110.0
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.0482,
+        "label": "patches"
+      },
+      {
+        "box": [
+          3.1,
+          83.4,
+          197.2,
+          199.6
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.4816,
+        "label": "patches",
+        "_commented": true
+      },
+      {
+        "box": [
+          3.1,
+          83.4,
+          197.2,
+          199.6
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.4186,
+        "label": "inclusion",
+        "_commented": true
+      },
+      {
+        "box": [
+          3.5,
+          2.0,
+          157.2,
+          199.2
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.3016,
+        "label": "patches",
+        "_commented": true
+      },
+      {
+        "box": [
+          143.0,
+          118.0,
+          183.0,
+          198.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed_by_model_found_by_ssp"
+      }
+    ],
+    "SSP-RT-DETR": [
+      {
+        "box": [
+          -0.2,
+          0.4,
+          93.1,
+          200.1
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.4197,
+        "label": "patches"
+      },
+      {
+        "box": [
+          142.8,
+          0.8,
+          198.5,
+          134.1
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.0304,
+        "label": "patches"
+      },
+      {
+        "box": [
+          154.7,
+          107.9,
+          200,
+          200.0
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.0588,
+        "label": "patches",
+        "_commented": true
+      },
+      {
+        "box": [
+          140.0,
+          118.6,
+          178.7,
+          199.9
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.8326,
+        "label": "patches"
+      }
+    ],
+    "YOLO10n": [
+      {
+        "box": [
+          7.107400894165039,
+          0.0,
+          88.95310974121094,
+          193.40843200683594
+        ],
+        "color": "green",
+        "color_rgb": [
+          50,
+          155,
+          75
+        ],
+        "type": "correct",
+        "score": 0.8503430485725403,
+        "label": "patches"
+      },
+      {
+        "box": [
+          140.6879119873047,
+          0.6310653686523438,
+          199.96908569335938,
+          115.07478332519531
+        ],
+        "color": "green",
+        "color_rgb": [
+          50,
+          155,
+          75
+        ],
+        "type": "correct",
+        "score": 0.9154728055000305,
+        "label": "patches"
+      },
+      {
+        "box": [
+          143.5747528076172,
+          117.39707946777344,
+          182.54730224609375,
+          200.0
+        ],
+        "color": "green",
+        "color_rgb": [
+          50,
+          155,
+          75
+        ],
+        "type": "correct",
+        "score": 0.8603880405426025,
+        "label": "patches"
+      },
+      {
+        "box": [
+          185.85360717773438,
+          85.02227783203125,
+          199.93853759765625,
+          118.5426254272461
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.3107190728187561,
+        "label": "inclusion"
+      }
+    ],
+    "YOLO11n": [
+      {
+        "box": [
+          7.372596263885498,
+          0.0,
+          85.19305419921875,
+          199.4073486328125
+        ],
+        "color": "green",
+        "color_rgb": [
+          50,
+          155,
+          75
+        ],
+        "type": "correct",
+        "score": 0.8163451552391052,
+        "label": "patches"
+      },
+      {
+        "box": [
+          139.78030395507812,
+          0.06894111633300781,
+          200.0,
+          122.02840423583984
+        ],
+        "color": "green",
+        "color_rgb": [
+          50,
+          155,
+          75
+        ],
+        "type": "correct",
+        "score": 0.8260728716850281,
+        "label": "patches"
+      },
+      {
+        "box": [
+          143.01510620117188,
+          118.6327896118164,
+          181.72061157226562,
+          199.90850830078125
+        ],
+        "color": "green",
+        "color_rgb": [
+          50,
+          155,
+          75
+        ],
+        "type": "correct",
+        "score": 0.8326021432876587,
+        "label": "patches"
+      },
+      {
+        "box": [
+          185.6400604248047,
+          84.71437072753906,
+          200.0,
+          115.98592376708984
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.5219018459320068,
+        "label": "inclusion"
+      },
+      {
+        "box": [
+          7.26848840713501,
+          0.017099380493164062,
+          86.37422180175781,
+          116.19385528564453
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.5110722184181213,
+        "label": "patches"
+      }
+    ]
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "image": "pitted_surface_294.jpg",
+  "class": "Pitted",
+  "rows": {
+    "Ground Truth": [
+      {
+        "box": [
+          66.0,
+          66.0,
+          197.0,
+          192.0
+        ],
+        "color": "blue",
+        "color_rgb": [
+          45,
+          130,
+          230
+        ],
+        "type": "gt"
+      },
+      {
+        "box": [
+          1.0,
+          90.0,
+          64.0,
+          199.0
+        ],
+        "color": "blue",
+        "color_rgb": [
+          45,
+          130,
+          230
+        ],
+        "type": "gt"
+      },
+      {
+        "box": [
+          51.0,
+          38.0,
+          78.0,
+          74.0
+        ],
+        "color": "blue",
+        "color_rgb": [
+          45,
+          130,
+          230
+        ],
+        "type": "gt"
+      }
+    ],
+    "YOLO26l": [
+      {
+        "box": [
+          0.0,
+          78.2,
+          199.3,
+          198.1
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.7309,
+        "label": "pitted_surface",
+        "text_offset": -10
+      },
+      {
+        "box": [
+          0.0,
+          55.4,
+          9.8,
+          110.5
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.295,
+        "label": "patches",
+        "text_offset": -10
+      },
+      {
+        "box": [
+          1.0,
+          90.0,
+          64.0,
+          199.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed",
+        "label": "pitted_surface"
+      },
+      {
+        "box": [
+          51.0,
+          38.0,
+          78.0,
+          74.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed",
+        "label": "pitted_surface"
+      }
+    ],
+    "RT-DETR": [
+      {
+        "box": [
+          51.5,
+          39.3,
+          90.4,
+          92.8
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.0461,
+        "label": "patches"
+      },
+      {
+        "box": [
+          1.6,
+          110.0,
+          196.0,
+          195.0
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.5463,
+        "label": "inclusion"
+      },
+      {
+        "box": [
+          1.6,
+          52.5,
+          196.0,
+          200.2
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.4321,
+        "label": "patches",
+        "_commented": true
+      },
+      {
+        "box": [
+          0.7,
+          42.4,
+          102.9,
+          200.7
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.1349,
+        "label": "patches",
+        "_commented": true
+      },
+      {
+        "box": [
+          66.0,
+          66.0,
+          197.0,
+          192.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed_by_model_found_by_ssp"
+      },
+      {
+        "box": [
+          0.9,
+          0.4,
+          199.3,
+          200.3
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.0188,
+        "label": "pitted_surface",
+        "_commented": true
+      }
+    ],
+    "SSP-RT-DETR": [
+      {
+        "box": [
+          0.9,
+          0.4,
+          199.3,
+          200.3
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.3312,
+        "label": "pitted_surface"
+      },
+      {
+        "box": [
+          -0.1,
+          0.9,
+          69.5,
+          199.7
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.1995,
+        "label": "pitted_surface"
+      },
+      {
+        "box": [
+          50.7,
+          34.6,
+          81.2,
+          75.5
+        ],
+        "color": "green",
+        "color_rgb": [
+          70,
+          175,
+          95
+        ],
+        "type": "correct",
+        "score": 0.0461,
+        "label": "pitted_surface"
+      }
+    ],
+    "YOLO10n": [
+      {
+        "box": [
+          66.0,
+          66.0,
+          197.0,
+          192.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed",
+        "label": "pitted_surface",
+        "_commented": true
+      },
+      {
+        "box": [
+          1.0,
+          90.0,
+          64.0,
+          199.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed",
+        "label": "pitted_surface"
+      },
+      {
+        "box": [
+          51.0,
+          38.0,
+          78.0,
+          74.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed",
+        "label": "pitted_surface",
+        "_commented": true
+      },
+      {
+        "box": [
+          49.35197830200195,
+          38.74868392944336,
+          79.64614868164062,
+          74.08256530761719
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.5708582401275635,
+        "label": "patches"
+      },
+      {
+        "box": [
+          18.845596313476562,
+          0.0,
+          191.9780731201172,
+          199.88124084472656
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.426347017288208,
+        "label": "pitted_surface"
+      }
+    ],
+    "YOLO11n": [
+      {
+        "box": [
+          7.523384094238281,
+          54.31993103027344,
+          199.3795928955078,
+          200.0
+        ],
+        "color": "green",
+        "color_rgb": [
+          50,
+          155,
+          75
+        ],
+        "type": "correct",
+        "score": 0.8057267665863037,
+        "label": "pitted_surface"
+      },
+      {
+        "box": [
+          1.0,
+          90.0,
+          64.0,
+          199.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed",
+        "label": "pitted_surface"
+      },
+      {
+        "box": [
+          51.0,
+          38.0,
+          78.0,
+          74.0
+        ],
+        "color": "red",
+        "color_rgb": [
+          220,
+          45,
+          45
+        ],
+        "type": "missed",
+        "label": "pitted_surface",
+        "_commented": true
+      },
+      {
+        "box": [
+          49.34763717651367,
+          37.47090148925781,
+          79.3260269165039,
+          73.86624145507812
+        ],
+        "color": "yellow",
+        "color_rgb": [
+          255,
+          190,
+          45
+        ],
+        "type": "false_positive",
+        "score": 0.440705269575119,
+        "label": "patches"
+      }
+    ]
+  }
+}
