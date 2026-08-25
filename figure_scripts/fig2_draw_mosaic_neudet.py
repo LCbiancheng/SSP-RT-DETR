@@ -19,6 +19,13 @@ Right:
 
 Output:
     figures/standard_mosaic_disadvantage_neudet.png
+
+Input data note:
+This script selects several images from the public NEU-DET dataset as input; the
+exact number of images is determined by the program logic. It uses 4 images in
+total: 1 main single-defect image (for the left and middle panels) and 3 random
+auxiliary images (for the right standard-augmentation panel). The main image is
+picked automatically from the dataset, or can be specified via a command-line argument.
 """
 
 import os

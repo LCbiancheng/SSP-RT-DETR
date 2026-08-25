@@ -10,6 +10,12 @@ Core changes compared with the previous version:
 
 Rows: Ground Truth | RT-DETR | SSP-RT-DETR
 Columns: crazing, inclusion, patches, pitted_surface, rolled-in_scale, scratches
+
+Input data note:
+This script selects several images from the public NEU-DET dataset as input; the
+exact number of images is determined by the program logic. It uses 6 images in
+total (one per defect class listed in PICTURE_SAMPLES), together with their
+corresponding XML annotation files.
 """
 
 import os

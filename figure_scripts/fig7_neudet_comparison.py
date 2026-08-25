@@ -13,6 +13,12 @@ Key fixes:
 5) Slightly reduce text labels drawn inside image panels.
 6) Add an inner padding inside each image panel so boxes near the left/top edge
    are not hidden by panel boundaries or grid lines.
+
+Input data note:
+This script selects several images from the public NEU-DET dataset as input; the
+exact number of images is determined by the program logic. It uses 3 images in
+total (one each for Inclusion, Patches, and Pitted), together with the matching
+*_boxes.json annotation files under box_annotations/.
 """
 
 from __future__ import annotations
