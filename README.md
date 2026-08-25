@@ -67,9 +67,13 @@ SSP-RT-DETR/
 │   ├── export_onnx.py         # ONNX export
 │   └── ablation_guard.py      # Ablation experiment manager
 │
-└── scripts/                   # Dataset splitting scripts
-    ├── split_neudet_dataset.py
-    └── split_gc10det_dataset.py
+├── scripts/                   # Dataset splitting scripts
+│   ├── split_neudet_dataset.py
+│   └── split_gc10det_dataset.py
+│
+└── figure_scripts/            # Visualization scripts
+    ├── neudet_comparison.py   # NEU-DET multi-model detection comparison figure
+    └── model_heatmap.py       # Model heatmap comparison figure
 ```
 
 ---
