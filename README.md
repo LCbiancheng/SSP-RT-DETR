@@ -17,7 +17,7 @@ A steel surface defect dataset with 6 defect classes: `crazing`, `inclusion`, `p
 - Number of images: 1800
 - Number of annotated boxes: 3351
 - Annotation format: VOC XML
-- Source: <https://faculty.neu.edu.cn/songkechen/zh_CN/zdylm/263270/list/>
+- Source: The NEU‑DET dataset is available at <http://faculty.neu.edu.cn/songkechen/zh_CN/zdylm/263270/list/index.htm>
 
 ### GC10-DET
 
@@ -25,7 +25,7 @@ A metallic surface defect dataset with 10 defect classes: `chongkong`, `hanfeng`
 
 - Number of images: 2070
 - Annotation format: VOC XML
-- Source: <https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets>
+- Source: The GC10‑DET dataset is available at <https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets>
 
 ### Dataset Splitting
 
